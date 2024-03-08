@@ -24,4 +24,6 @@ require("lazy").setup({
 	require("plugins/treesitter"),
 
 	require("plugins/toggleterm"),
+
+	require("plugins/nvim-tree"),
 })

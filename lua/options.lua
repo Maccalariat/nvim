@@ -70,3 +70,12 @@ local powershell_options = {
 for option, value in pairs(powershell_options) do
 	vim.opt[option] = value
 end
+
+-- hack in cppm files (c++ module interface) to be recognized as cpp files
+vim.api.nvim_command("autocmd BufNewFile,BufRead *.cppm set filetype=cpp")
+vim.api.nvim_command("autocmd FileType cpp setlocal iskeyword+=:")
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+vim.opt.termguicolors = true
