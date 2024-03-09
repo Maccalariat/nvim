@@ -11,6 +11,8 @@ require("lazy").setup({
 
 	require("plugins/lspconfig"),
 
+	require("plugins/lsp-signature"),
+
 	require("plugins/conform"),
 
 	require("plugins/cmp"),
@@ -26,4 +28,6 @@ require("lazy").setup({
 	require("plugins/toggleterm"),
 
 	require("plugins/nvim-tree"),
+
+	require("plugins/hop"),
 })
