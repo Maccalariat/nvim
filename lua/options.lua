@@ -1,8 +1,3 @@
--- [[ Setting options ]]
--- See `:help vim.opt`
--- NOTE: You can change these options as you wish!
---  For more options, you can see `:help option-list`
-
 -- Make line numbers default
 vim.opt.number = true
 
@@ -13,6 +8,8 @@ vim.opt.mouse = "a"
 vim.opt.showmode = false
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.opt.showmatch = true
 
 -- Enable break indent
 vim.opt.breakindent = true

@@ -3,6 +3,8 @@ require("lazy").setup({
 	-- "gc" to comment visual regions/lines
 	{ "numToStr/Comment.nvim", opts = {} },
 
+	require("plugins/better-escape"),
+
 	require("plugins/gitsigns"),
 
 	require("plugins/which-key"),
@@ -30,4 +32,6 @@ require("lazy").setup({
 	require("plugins/nvim-tree"),
 
 	require("plugins/hop"),
+
+	require("plugins/autopairs"),
 })

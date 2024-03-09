@@ -1,11 +1,11 @@
 return {
-	{ -- Fuzzy Finder (files, lsp, etc)
+	{
 		"nvim-telescope/telescope.nvim",
 		event = "VimEnter",
 		branch = "0.1.x",
 		depndencies = {
 			"nvim-lua/plenary.nvim",
-			{ "nvim-tree/nvim-web-devicons" },
+			"nvim-tree/nvim-web-devicons",
 		},
 		config = function()
 			require("telescope").setup({
@@ -18,7 +18,6 @@ return {
 			})
 
 			-- Enable telescope extensions, if they are installed
-			require("telescope").load_extension("fzf")
 			require("telescope").load_extension("ui-select")
 			require("telescope").load_extension("live_grep_args")
 
@@ -59,17 +58,7 @@ return {
 			end, { desc = "[S]earch [N]eovim files" })
 		end,
 	},
-	{
-		"nvim-telescope/telescope-fzf-native.nvim",
-		depndencies = {
-			"nvim-telescope/telescope.nvim",
-		},
-		build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
-	},
-	{
-		"nvim-telescope/telescope-ui-select.nvim",
-		depndencies = { "nvim-telescope/telescope.nvim" },
-	},
+	{ "nvim-telescope/telescope-ui-select.nvim", depndencies = { "nvim-telescope/telescope.nvim" } },
 	{
 		"nvim-telescope/telescope-live-grep-args.nvim",
 		depndencies = { "nvim-telescope/telescope.nvim" },
