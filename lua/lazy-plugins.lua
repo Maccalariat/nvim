@@ -19,8 +19,6 @@ require("lazy").setup({
 
 	require("plugins/cmp"),
 
-	require("plugins/tokyonight"),
-
 	require("plugins/todo-comments"),
 
 	require("plugins/mini"),
@@ -34,4 +32,8 @@ require("lazy").setup({
 	require("plugins/hop"),
 
 	require("plugins/autopairs"),
+
+	require("plugins/lualine"),
+
+	require("plugins/neoclip"),
 })
