@@ -3,37 +3,39 @@ require("lazy").setup({
 	-- "gc" to comment visual regions/lines
 	{ "numToStr/Comment.nvim", opts = {} },
 
-	require("plugins/better-escape"),
+	require("plugins.better-escape"),
 
-	require("plugins/gitsigns"),
+	require("plugins.gitsigns"),
 
-	require("plugins/which-key"),
+	require("plugins.which-key"),
 
-	require("plugins/telescope"),
+	require("plugins.telescope"),
 
-	require("plugins/lspconfig"),
+	require("plugins.lspconfig"),
 
-	require("plugins/lsp-signature"),
+	require("plugins.lsp-signature"),
 
-	require("plugins/conform"),
+	require("plugins.conform"),
 
-	require("plugins/cmp"),
+	require("plugins.cmp"),
 
-	require("plugins/todo-comments"),
+	require("plugins.todo-comments"),
 
-	require("plugins/mini"),
+	require("plugins.mini"),
 
-	require("plugins/treesitter"),
+	require("plugins.treesitter"),
 
-	require("plugins/toggleterm"),
+	require("plugins.toggleterm"),
 
-	require("plugins/nvim-tree"),
+	require("plugins.nvim-tree"),
 
-	require("plugins/hop"),
+	require("plugins.hop"),
 
-	require("plugins/autopairs"),
+	require("plugins.autopairs"),
 
-	require("plugins/lualine"),
+	require("plugins.lualine"),
 
-	require("plugins/neoclip"),
+	require("plugins.project"),
+
+	require("plugins.trouble"),
 })
