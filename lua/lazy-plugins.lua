@@ -5,6 +5,8 @@ require("lazy").setup({
 
 	require("plugins.better-escape"),
 
+	require("plugins.neodev"),
+
 	require("plugins.gitsigns"),
 
 	require("plugins.which-key"),
@@ -14,6 +16,12 @@ require("lazy").setup({
 	require("plugins.lspconfig"),
 
 	require("plugins.lsp-signature"),
+
+	require("plugins.dap"),
+
+	require("plugins.dap-ui"),
+
+	require("plugins.dap-python"),
 
 	require("plugins.conform"),
 
